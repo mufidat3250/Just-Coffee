@@ -1,11 +1,35 @@
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,100;1,600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (max-width: 1024px) {
+  :root {
+    font-size: 13px;
+  }
+}
+/* @media (min-width: 1990px) {
+  :root {
+    font-size: 13px;
+    margin: 0 auto;
+  }
+} */
+@media (max-width: 650px) {
+  :root {
+    font-size: 12px;
+  }
 }
 
-
-
-
-
+* {
+  font-family: "Poppins", "sanserif";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2 linear;
+}
+body{
+  overflow: hidden;
+  height: 100vh;
+}

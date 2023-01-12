@@ -1,0 +1,28 @@
+html{
+    font-size: 55%;
+     
+}
+.navWrapper{
+    @apply  top-0 left-0 right-0 flex justify-between items-center bg-white shadow-lg py-[1.4rem] px-[9%] z-[1000];
+    .menu{
+        @apply text-[2rem] md:text-[2.3rem] text-primary cursor-pointer block md:hidden ;
+    }
+    .logo-link{
+        @apply   flex items-center text-[1.5rem] md:text-[2.3rem] gap-3; 
+    }
+
+
+
+.nav-tabs{
+    @apply hidden md:flex space-x-[1rem]  ;
+
+    & a{
+        @apply hover:-translate-y-2 duration-300 hover:font-bold hover:text-primary;
+    }
+    
+}
+.mobile{
+    @apply flex flex-col absolute top-20  w-full space-x-0 md:hidden gap-5 font-['Poppins'] px-6 text-[1.5rem] bg-white z-[1000];
+}
+}
+

@@ -1,0 +1,26 @@
+.home-section{
+    @apply  flex flex-col relative  h-[80%]; 
+    background-image: url('/public//image//home-bg.jpg');
+    background-size: cover;
+
+    .row{
+        @apply flex  w-full justify-between flex-col md:flex-row items-center px-[9%] py-[2rem] lg:pt-[8rem];
+      .content{
+        h3{
+         @apply text-[2.5rem] sm:text-[3.5rem] lg:text-[4.5rem] font-bold text-primary lg:max-w-[400px] text-center lg:text-left;
+        }
+      }
+      img{
+        @apply  h-[25rem] md:h-[30rem]; 
+      }
+
+    }
+   
+    .image-slider{
+        @apply flex absolute justify-center bottom-0 mt-[10rem]  right-0 md:left-[30%] lg:left-[40%] mb-[2rem] md:mb-[3rem];
+        transform:translateX(0%, 50%);
+        img{
+            @apply h-[5rem] md:h-[7rem] object-cover cursor-pointer ;
+        }
+    }
+}

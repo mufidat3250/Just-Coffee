@@ -1,8 +1,11 @@
 import React from 'react'
+import './Button.scss'
 
-const Button = () => {
+const Button = ({title}:{title:string}) => {
   return (
-    <div>Button</div>
+        <a href="#"  className='btn overflow-hidden'>
+        {title}
+        </a>
   )
 }
 

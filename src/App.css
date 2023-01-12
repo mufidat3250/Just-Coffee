@@ -1,0 +1,3 @@
+.sectionWrapper{
+  @apply h-screen overflow-auto;
+}
